@@ -1,0 +1,9 @@
+HELLO FRIENDS:
+1-BOARD DESIGN & MAIN LOOP
+2-USER INPUT & VALIDITY CHECK
+3-WINNING
+4-RESULT
+5-COMPLETE CODE
+
+This is the link for the complete video tutorial
+https://www.youtube.com/watch?v=J6QsD0hLg8U&list=PLRfL3468FRS7k9nAOyvYvG5sMUa-Fb8uE

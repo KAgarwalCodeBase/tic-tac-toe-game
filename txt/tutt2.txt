@@ -1,0 +1,46 @@
+#include<iostream.h>
+int main()
+{
+  unsigned int i;
+  int player =0;        //Current player no- 1 or 2
+  int winner =0;        //the winning player no
+  unsigned int row=0;     //for storing the row index
+  unsigned int column=0;  //for storing the column index
+  int choice=0;  //for storing choice of user
+
+ char board[3][3]={
+                    ('1','2','3'),   //the board initial values are 
+                    ('4','5','6'),   //character used to select a
+                    ('7','8','9')    //vacant space for player turn
+                  };
+//the main game loop.
+for(i=0;i<9 & winner==0;++i)
+{
+   cout<<board[0][0]<<"|"<<board[0][1]<<"|"<<board[0][2];
+   cout<<"\n---+---+---\n";
+   cout<<board[1][0]<<"|"<<board[1][1]<<"|"<<board[1][2];
+   cout<<"\n---+---+---\n";
+   cout<<board[2][0]<<"|"<<board[2][1]<<"|"<<board[2][2];
+  player=i%2+1;  //select player
+   
+
+   do
+   {
+       char s1;
+       if(player==1)
+          s1='X';
+       else
+         s1='O';
+      cout<<"\n Player"<<player<<" please enter a valid square number for where you want to place your "<<s1<<endl;
+       cin>>choice;
+       row=--choice/3;
+       column=choice%3;
+   }while(choice<0||choice>8||board[row][column]>'9');
+
+board[row][column]=(player==1)?'X':'O';
+
+/* winner find */
+}
+/*code for output*/
+return 0;
+}
